@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="./dist/css/styles.css">
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Progress</title>
+		<link rel="stylesheet" type="text/css" href="dist/css/styles.css" />
+	</head>
+	<body>
+		<div class="progress">
+			<p class="progress__title progress__title_text-style">Progress</P>
+			<div class="progress__container">
+				<div class="progress__status">
+					<svg class="progress__circle" viewbox='0 0 36 36' id="diagram">
+						<circle cx="18" cy="18" r="16" fill="transparent" stroke="#ededea" stroke-width="2"></circle>
+						<circle id="segment" cx="18" cy="18" r="15.91549430918954" fill="transparent" stroke="#feda4d" stroke-width="2" stroke-dasharray="0 100" stroke-dashoffset="25"></circle>
+					</svg>
+				</div>
+				<div class="progress__controls">
+					<div class="progress__value-control">						
+						<svg  viewBox='0 0 40 24' >
+							<rect x='1' y='1' width='38' height='22' rx='11' fill='none' stroke='#494949' stroke-width='1'/>
+						</svg>
+						<p class="progress__label label-text" >Value</p>
+						<input type="text" class="progress__input" maxlength="3" type="number" id="value">
+					</div>
+					<div class="progress__animate-control" id="animate">
+						<svg viewBox='0 0 40 24'>
+							<rect x='1' y='1' width='38' height='22' rx='11' fill='#494949' stroke='#494949' stroke-width='1'/>
+							<circle cx ='12' cy ='12'r='10.2' fill="#D8D8D8"/>
+						</svg>
+						<p class="progress__label label-text">Animate</p>
+					</div>
+					<div class="progress__hide-control" id="hide" >
+						<svg viewBox='0 0 40 24'>
+							<rect x='1' y='1' width='38' height='22' rx='11' fill='#494949' stroke='#494949' stroke-width='1'/>
+							<circle cx ='12' cy ='12'r='10.2' fill="#D8D8D8"/>
+						</svg>
+						<p class="progress__label label-text">Hide</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="src/js/source.js"></script>
+	</body>
+</html>
